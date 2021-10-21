@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>All Styles By J</title>
+    <link rel="stylesheet" href="css/Css.css">
+    <link rel="shortcut icon" href="images/favicomatic/favicon.ico">
+    <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"></script>
+    <meta name="viewport" content="width =device-width, initial-scale =1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div>
+        <a href="index.html"><img src="images/ASBJ-Logo.png" class="Logo"></a>
+    </div>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="About J.html">ABOUT J</a></li>
+                <li><a href="Service.html">SERVICES</a></li>
+                <li><a href="Appointments.html">APPOINTMENTS</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="images/MenuButton.png" id="menu">
+    </div>
+
+    <!--Appointment Page-->
+    <section id="Appointments">
+        <div class="Appointments-title-text">
+            <p>APPOINTMENTS</p>
+            <h1>Schedule With J Today!</h1>
+        </div>
+        <section id="Overall-Appointments">
+            <div class="Appointments-box">
+                <div class="Appointments-left">
+                    <h3>Send Your Request</h3>
+                    <form action="sendmail.php" method="post" name="contact_form" id="contact_form">
+                        <fieldset>
+                            <legend>Contact Information</legend>
+                            <label for="first_name">First Name:</label>
+                            <input type="text" name="first_name" id="first_name" required><br>
+                            <label for="last_name">Last Name:</label>
+                            <input type="text" name="last_name" id="last_name" required><br>
+                            <label for="email">Email Address:</label>
+                            <input type="email" name="email" id="email" required><br>
+                            <label for="verify">Verify Email:</label>
+                            <input type="email" name="verify" id="verify" required autocomplete="off"><br>
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" name="phone" id="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="999-999-9999" required><br>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Message Information</legend>
+                            <label for="reservation_date">Reservation Date:</label>
+                            <input type="date" name="reservation_date" id="reservation_date" required><br>
+
+                            <div class="subjectbar">
+                                <label for="subject">Category:</label>
+                                <select name="subject" id="subject">
+                                        <option value="Additional-Styling">Additional Styling</option>
+                                        <option value="Braids-Twist-Crotchet">Braids, Twist & Crotchet</option>
+                                        <option value="Lace-Maintenance">Lace Maintenance</option>
+                                        <option value="Natural-Hair">Natural Hair</option>
+                                        <option value="Quick-Weaves">Quick Weaves</option>
+                                        <option value="Sew-ins">Sew-ins</option>
+                                        <option value="Sleek-Ponytail">Sleek Ponytail</option>
+                                        <option value="WIGS">WIGS</option>
+                                        <option value="Other">Other</option>
+                                </select><br>
+
+
+                                <label for="subject">Hair Style:</label>
+
+                                <select name="subject1" id="subject1">
+                                <div class="Add-Styling">
+                                    <option value="Curls">Curls (30 minutes @ $30.00) </option>
+                                    <option value="Crimps"> Crimps (1 hour 5 minutes @ $45.00) </option>
+                                    <option value="Weave-Extension-Silk-Press">Weave/Extension Silk Press (30 minutes @ $20.00) </option>
+                                    <option value="Other">Other</option>
+                                </div>
+
+                                <div class= "braids"></div>
+                                    <option value="Passion-Twist"> Passion Twist (4 hours 25 minutes @ $150.00) </option>
+                                    <option value="Marley-Twist">Marley Twist (4 hours 10 minutes @ $150.00) </option>
+                                    <option value="Other">Other</option>
+                                </div>
+
+                                <div class= "Lace"></div>
+                                    <option value="Lace-Closure-Touch Up"> Lace Closure Touch Up (1 hour 30 minutes @ $45.00) </option>
+                                    <option value="Frontal-Touch-Up">Frontal Touch Up (1 hour 30 minutes @ $60.00) </option>
+                                    <option value="Other">Other</option>
+                                </div>
+
+                                <div class= "Quick-Weaves"></div>
+                                    <option value="Quick-Weave"> Quick Weave (2 hours 25 minutes @ $70.00)</option>
+                                    <option value="Closure-Quick-Weave">Closure Quick Weave (2 hours 30 minutes @ $95.00)</option>
+                                    <option value="Frontal-Quick-Weave">Frontal Quick Weave (3 hours 20 minutes @ $120.00)</option>
+                                    <option value="Other">Other</option>
+                                </div>
+
+                                <div class= "Sew-ins"></div>
+                                    <option value="Basic-Sew-In"> Basic Sew-In (2 hours 40 minutes @ $95.00) </option>
+                                    <option value="Lace-Closure-Sew-In">Lace Closure Sew-In (3 hours 30 minutes @ $135.00) </option>
+                                    <option value="Lace-Frontal-Sew-In">Lace Frontal Sew-In (3 hours 30 minutes @ $165.00)</option>
+                                    <option value="Other">Other</option>
+                                </div>
+
+                                <div class= "Sleek-Ponytails"></div>
+                                    <option value="Sleek-Braided-Pony"> Sleek Braided Pony (1 hour 40 minutes @ $60.00) </option>
+                                    <option value="Half-Up-Half-Down">Half Up/Half Down (3 hours 30 minutes @ $80.00)</option>
+                                    <option value="Sleek-Ponytail ">Sleek Ponytail (1 hour 40 minutes @ $55.00)</option>
+                                    <option value="Other">Other</option>
+                                </div>
+
+                                <div class= "Wigs"></div>
+                                    <option value="Wig-Construction"> Wig Construction (4 hours @ $110.00)</option>
+                                    <option value="Lace-Frontal-Installation">Lace Frontal Installation (2 hours @ $130.00)</option>
+                                    <option value="U-Part-Lace-Closure-Wig">U-Part/Lace Closure Wig Install (1 hour 15 minutes @ $100.00) </option>
+                                    <option value="Other">Other</option>
+                                </div>
+
+                                </select><br>
+                            </div>
+
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </fieldset>
+                        <fieldset id="Abuttons">
+                            <legend>Submit Your Email Message</legend>
+                            <label>&nbsp;</label>
+                            <input type="submit" id="submit" value="Send Message">
+                            <input type="reset" id="reset" value="Reset"><br>
+                        </fieldset>
+                    </form>
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <!-- Footer -->
+
+        <section id="footer">
+
+            <img src="images/All-Styles2.png" class="footer-img">
+            <div class="title-text">
+                <p>Contact</p>
+                <h1>Visit J Today!</h1>
+            </div>
+            <div class="footer-row">
+                <div class="footer-left">
+                    <i class="fa fa-clock"></i>
+                    <h1>My Hours</h1>
+                    </i>
+                    <p id="workdays"></p>
+                </div>
+                <div class="footer-right">
+                    <i class="fa fa-phone"></i>
+
+                    <h1>Get In Touch</h1>
+                    <p id="inTouchAddy"></p>
+                    <p id="inTouchEmail"></p>
+                    <p id="inTouchNumber"></p>
+                </div>
+
+            </div>
+            <div class="social-links">
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <p>Copyright Henny C Code Designs </p>
+            </div>
+
+        </section>
+
+
+
+        <!-- Java Script -->
+
+        <!-- <script>
+            var Additional_Styling = document.getElementById("Additional Styling")
+        </script>
+
+
+        <script>
+            var subject = document.getElementById("subject")
+            var Additional_Styling = document.getElementsByName("Additional Styling")
+            var Add_Styling = document.getElementsByClassName("Add-Styling")
+
+            if (subject = Additional_Styling) {
+                Add_Styling
+            }
+        </script>
+
+        <script>
+            var menuBtn = document.getElementById("menuBtn")
+            var sideNav = document.getElementById("sideNav")
+            var mmenu = document.getElementById("menu")
+
+            sideNav.style.right = "-250px";
+
+            menuBtn.onclick = function() {
+                if (sideNav.style.right == "-250px") {
+                    sideNav.style.right = "0";
+                    menu.src = "Pictures/CloseMenu.png"
+                } else {
+                    sideNav.style.right = "-250px";
+                    menu.src = "Pictures/MenuButton.png"
+                }
+            }
+        </script> -->
+        <script src="js/script4.js"></script>
+</body>
+
+</html>
